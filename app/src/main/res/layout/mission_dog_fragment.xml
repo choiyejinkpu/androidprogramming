@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MissionDog_Fragment"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:textStyle="bold"
+        android:fontFamily="@font/font"
+       android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="반려견과 함께 데일리 미션을 수행하고\n애정도를 채워보세요~"
+        android:textAlignment="center"
+        android:textSize="17dp"
+        android:padding="10dp"/>
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/love"
+        android:textSize="15dp"
+        android:padding="10dp"/>
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/progressbar"
+        android:max="100"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:progressBackgroundTint="#a85fe13b"
+        android:progressTint="#089213"
+        />
+
+    <LinearLayout
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:background="@drawable/setitem"
+        android:padding="20dp">
+        <!--        사이간격-->
+        <CheckBox
+            android:textStyle="bold"
+            android:fontFamily="@font/font"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" 양치하기"
+            android:id="@+id/one"
+            android:textSize="15dp"/>
+        <CheckBox
+            android:textStyle="bold"
+            android:fontFamily="@font/font"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" 산책하기"
+            android:id="@+id/two"
+            android:textSize="15dp"/>
+        <CheckBox
+            android:textStyle="bold"
+            android:fontFamily="@font/font"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" 간식주기"
+            android:id="@+id/three"
+            android:textSize="15dp"/>
+        <CheckBox
+            android:textStyle="bold"
+            android:fontFamily="@font/font"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" 교감하기"
+            android:id="@+id/four"
+            android:textSize="15dp"/>
+    </LinearLayout>
+
+</LinearLayout>

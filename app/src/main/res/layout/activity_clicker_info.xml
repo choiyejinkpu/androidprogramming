@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".clicker_info"
+    android:orientation="vertical"
+    android:paddingTop="10dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout1"
+        android:paddingBottom="10dp">
+
+        <ImageView
+            android:id="@+id/infoimage1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/star"/>
+        <TextView
+           android:textStyle="bold"
+            android:fontFamily="@font/font"
+            android:id="@+id/infotext1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/infoimage1"
+            android:layout_toRightOf="@+id/infoimage1"
+            android:textSize="12pt"
+            android:text="클리커란?"/>
+        <TextView
+            android:textStyle="bold"
+            android:fontFamily="@font/font"
+            android:id="@+id/infotext_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/infotext1"
+            android:layout_toRightOf="@+id/infoimage1"
+            android:textSize="9pt"
+            android:text="\t클리커를 누르면 '딸깍'소리가 나는 반려견 교육 도구로 산책,명령어 교육, 배변 교육 등 다양한 상황에서 이용할 수 있어요."/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+
+        android:id="@+id/layout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout1"
+        android:paddingBottom="10dp">
+
+        <ImageView
+            android:id="@+id/infoimage3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/danger" />
+
+        <TextView
+            android:textStyle="bold"
+            android:fontFamily="@font/font"
+            android:id="@+id/infotext3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/infoimage3"
+            android:layout_toRightOf="@+id/infoimage3"
+            android:text="이런 점은 주의하세요!"
+            android:textSize="12pt" />
+
+        <TextView
+            android:textStyle="bold"
+            android:fontFamily="@font/font"
+            android:id="@+id/infotext_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/infotext3"
+            android:layout_toRightOf="@+id/infoimage3"
+            android:text="\t메세지 인식에 혼란을 주지 않도록, 반려견이 잘못했거나, 반려견을 꾸짖을 때는 클리커를 이용하지 말아 주세요."
+            android:textSize="9pt" />
+    </RelativeLayout>
+
+</RelativeLayout>
